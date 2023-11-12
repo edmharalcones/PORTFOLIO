@@ -1,0 +1,58 @@
+body{
+    height: 100%;
+    margin: 0%;
+
+}
+@media screen and (max-width: 600px) {
+    .hero{
+        font-size: 5rem !important;
+    }
+  }
+
+#name{
+    font-family: 'Great Vibes', cursive;
+}
+
+
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+
+}
+.hero{
+    font-size: 10rem;
+    
+}
+.hero h5{
+    font-weight: 700;
+}
+
+.about{
+    font-size: 2rem;
+    padding: 3rem;
+}
+
+.project{
+    font-size: 2rem;
+    padding: 3rem;
+}
+
+.project p{
+    font-weight: 600;
+}
+
+.send{
+    background-color: #555555;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
