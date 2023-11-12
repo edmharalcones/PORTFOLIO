@@ -9,11 +9,22 @@ body{
     }
   }
 
+  @media screen and (max-width: 375px) {
+    .hero{
+        font-size: 3rem !important;
+    }
+  }
+
 #name{
     font-family: 'Great Vibes', cursive;
 }
 
-
+.images{
+    width: 10em; 
+    height: auto; 
+    padding: 1px; 
+    margin: 5px;
+}
 .page{
     display: flex;
     justify-content: center;
