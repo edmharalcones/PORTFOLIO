@@ -20,7 +20,7 @@
     <h5>Web Developer</h5>
     </div>
     <!-- About -->
-    <div class="container">
+    <div class="container reveal">
 
             <div class="about page">
                 <hr/>
@@ -32,7 +32,7 @@
         <div class="bottom-line"></div>
     </div>
 <!-- first project -->
-    <div class="project page">
+    <div class="project page reveal">
         <div class="row">
             <h2>MEOWOOF!</h2>
         </div>
@@ -53,7 +53,7 @@
     </div>
 
 <!-- second project -->
-    <div class="project page">
+    <div class="project page reveal">
         <div class="row">
             <h2>Focusd</h2>
         </div>
@@ -73,7 +73,7 @@
         </div>
     </div>
 <!-- Contact -->
-    <div class="contact page">
+    <div class="contact page reveal">
         <p>Send me a message</p>
         <form action="https://formsubmit.co/edmharalcones@gmail.com" method="POST">
             <textarea class="form-control" id="Message" rows="5" name="message" required></textarea>
@@ -84,4 +84,27 @@
 
     </div>
 </body>
+<script type="text/javascript">
+    window.addEventListener('scroll',reveal);
+
+    function reveal(){
+        var reveals = document.querySelectorAll('.reveal');
+
+        for (var i = 0; i < reveals.length; i++){
+
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+
+            if(revealtop < windowheight - revealpoint){
+                reveals[i].classList.add('active');
+
+            }
+            else{
+                reveals[i].classList.remove('active');
+            }
+        }
+    }
+
+</script>
 </html>
